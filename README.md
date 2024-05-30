@@ -23,11 +23,11 @@ This repository contains a Python script that utilizes facial landmark detection
 4. Move your face closer or further away from the camera to adjust the system volume.
 
 ## How it works
-1. The script uses the FaceMeshDetector from cvzone to detect facial landmarks.
+1. The script uses the `FaceMeshDetector` from `cvzone` to detect facial landmarks.
 2. It calculates the distance between the left and right eye corners.
 3. This distance is used to estimate the depth using a pre-defined focal length and a known width of a face.
 4. The estimated depth is then mapped to a corresponding volume level based on pre-defined ranges.
-5. The system's master volume is adjusted accordingly using the pycaw library.
+5. The system's master volume is adjusted accordingly using the `pycaw` library.
 
 ## Notes
 1. The script assumes a known width of the face (6.3 cm).
